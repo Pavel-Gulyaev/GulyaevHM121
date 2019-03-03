@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GulyaevHM121</string>
+    <string name="label">Подписка</string>
+    <string name="okbutton">OK</string>
+    <string name="clearbutton">Очистить</string>
+    <string name="nametext">Имя пользователя</string>
+    <string name="emailtext">Электронная почта</string>
+</resources>

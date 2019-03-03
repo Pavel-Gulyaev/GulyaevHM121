@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:text=""
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/okbutton"
+        app:layout_constraintBottom_toTopOf="@+id/clearButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="@string/clearbutton"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="@string/nametext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="395dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/emailtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editname" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="395dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametext" />
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="395dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+</android.support.constraint.ConstraintLayout>
